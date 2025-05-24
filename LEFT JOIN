@@ -1,0 +1,5 @@
+-- LEFT JOIN returns all employees, along with department name if matched
+-- If no match, DeptName will be NULL
+SELECT e.Name, d.DeptName
+FROM Employees e
+LEFT JOIN Departments d ON e.DeptID = d.DeptID;
