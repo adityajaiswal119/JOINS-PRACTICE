@@ -1,0 +1,5 @@
+-- FULL OUTER JOIN combines results of LEFT and RIGHT JOIN
+-- Returns all rows from both tables, with NULL where no match is found
+SELECT e.Name, d.DeptName
+FROM Employees e
+FULL OUTER JOIN Departments d ON e.DeptID = d.DeptID;
