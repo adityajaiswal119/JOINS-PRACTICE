@@ -1,0 +1,5 @@
+-- RIGHT JOIN returns all departments, with employee names if matched
+-- If no matching employee, Name will be NULL
+SELECT e.Name, d.DeptName
+FROM Employees e
+RIGHT JOIN Departments d ON e.DeptID = d.DeptID;
