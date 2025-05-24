@@ -1,0 +1,4 @@
+-- INNER JOIN returns only the rows with matching DeptID in both tables
+SELECT e.Name, d.DeptName
+FROM Employees e
+INNER JOIN Departments d ON e.DeptID = d.DeptID;
